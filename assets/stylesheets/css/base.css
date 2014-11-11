@@ -19,6 +19,7 @@ ul, li {
   list-style: none; }
 
 img {
+  display: block;
   width: 100%;
   height: auto; }
 
@@ -33,6 +34,7 @@ DEFAULTS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
 body {
+  background: #e2eef7;
   font-family: 'Raleway', sans-serif;
   color: #241960; }
 
@@ -44,7 +46,7 @@ body {
 /* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-MAIN SECTION
+HEADER
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
@@ -78,7 +80,7 @@ header {
   line-height: 30pt;
   color: #e2eef7; }
 
-header > .navigation > * {
+header > .navigation > li {
   float: left;
   width: 50%;
   box-sizing: border-box; }
@@ -97,5 +99,32 @@ header > .navigation > li > a {
   letter-spacing: 3px;
   color: #e2eef7;
   text-align: center; }
+
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+MAIN
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+main {
+  margin: 12px 0; }
+
+main > .social-media {
+  margin: 16px 0; }
+
+main > .social-media > li {
+  float: left;
+  box-sizing: border-box;
+  width: 33.33%;
+  padding: 0 8%;
+  border-radius: 3px; }
+
+main > .social-media > li:hover {
+  background: #bb2255; }
+
+main > .social-media > li > a {
+  display: block;
+  padding: 4px 0; }
 
 /*# sourceMappingURL=base.css.map */
