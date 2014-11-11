@@ -150,7 +150,8 @@ main > .biography > .my-photo {
   float: right;
   width: 146px;
   border: 2px solid #bb2255;
-  border-radius: 50%; }
+  border-radius: 50%;
+  margin: 18px; }
 
 /* PORTFOLIO */
 main > .projects-list {
