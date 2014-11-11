@@ -96,7 +96,7 @@ header > .navigation > .selected {
 header > .navigation > li > a {
   display: block;
   padding: 12px 0;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: bold;
   letter-spacing: 3px;
   color: #e2eef7;
@@ -110,10 +110,10 @@ MAIN
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
 main {
-  margin: 12px 20px; }
+  margin: 12px 0; }
 
 main > .social-media {
-  margin: 16px 0; }
+  margin: 16px 20px; }
 
 main > .social-media > li {
   float: left;
@@ -129,6 +129,20 @@ main > .social-media > li > a {
   display: block;
   padding: 4px 0; }
 
+main > h1 {
+  display: block;
+  padding: 24px 0;
+  margin-bottom: 24px;
+  font-family: 'Josefin Slab', serif;
+  font-size: 28pt;
+  text-align: center;
+  background: #241960;
+  color: #e2eef7; }
+
+/* ABOUT */
+main > .biography {
+  margin: 0 20px; }
+
 main > .biography > p {
   margin: 16px 0; }
 
@@ -137,5 +151,48 @@ main > .biography > .my-photo {
   width: 146px;
   border: 2px solid #bb2255;
   border-radius: 50%; }
+
+/* PORTFOLIO */
+main > .projects-list {
+  margin: 0 20px; }
+
+main > .projects-list > li {
+  margin-bottom: 24px; }
+
+main > .projects-list > li > h2 {
+  display: block;
+  font-family: 'Josefin Slab', serif;
+  font-weight: bold;
+  font-size: 20pt;
+  padding: 6px 24px;
+  margin-bottom: 6px;
+  border-bottom: 2px solid #241960; }
+
+main > .projects-list > li > h2 > a {
+  display: block;
+  float: right;
+  position: relative;
+  top: -6px;
+  margin: 0 6px;
+  padding: 4px 6px 2px 6px;
+  font-size: 14pt;
+  color: #e2eef7;
+  background: #241960;
+  border-radius: 3px; }
+
+main > .projects-list > li > h2 > a:hover {
+  background: #bb2255; }
+
+main > .projects-list > li > .project-content {
+  width: 80%;
+  margin: 12px auto; }
+
+main > .projects-list > li > .project-content > img {
+  margin: 12px 0;
+  border: 2px solid #bb2255;
+  border-radius: 3px; }
+
+main > .projects-list > li > .project-content > p {
+  text-align: center; }
 
 /*# sourceMappingURL=base.css.map */
