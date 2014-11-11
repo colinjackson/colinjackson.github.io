@@ -16,6 +16,8 @@ $azure: #e2eef7;
 body {
   background: $azure;
   font-family: 'Raleway', sans-serif;
+  font-size: 12pt;
+  line-height: 20pt;
   color: $purple;
 }
 
@@ -47,7 +49,7 @@ header {
 .header-content > .context {
   > small {
     display: inline-block;
-    padding: 8px;
+    padding: 4px 8px;
     font-family: 'Josefin Slab', serif;
     font-size: 14pt;
     font-weight: bold;
@@ -117,7 +119,7 @@ MAIN
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
 
 main {
-  margin: 12px 0;
+  margin: 12px 20px;
 }
 
 main > .social-media {
@@ -139,4 +141,15 @@ main > .social-media > li:hover {
 main > .social-media > li > a {
   display: block;
   padding: 4px 0;
+}
+
+main > .biography > p {
+  margin: 16px 0;
+}
+
+main > .biography > .my-photo {
+  float: right;
+  width: 146px;
+  border: 2px solid $magenta;
+  border-radius: 50%;
 }
