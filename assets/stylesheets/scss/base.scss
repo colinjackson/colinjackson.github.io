@@ -1,1 +1,106 @@
 @import "reset";
+@import url(http://fonts.googleapis.com/css?family=Josefin+Slab:700|Raleway);
+
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+DEFAULTS
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+
+$purple: #241960;
+$magenta: #bb2255;
+$azure: #e2eef7;
+
+body {
+  font-family: 'Raleway', sans-serif;
+  color: $purple;
+}
+
+.group:after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+
+
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+MAIN SECTION
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+
+header {
+  background: $purple;
+}
+
+.header-content {
+  height: 158px;
+  border-bottom: 2px solid $azure;
+}
+
+.header-content > .context {
+  > small {
+    display: inline-block;
+    padding: 8px;
+    font-family: 'Josefin Slab', serif;
+    font-size: 14pt;
+    font-weight: bold;
+    color: $magenta;
+  }
+
+  > :first-child {
+    float: left;
+  }
+
+  > :last-child {
+    float: right;
+  }
+}
+
+.header-content > .message {
+  height: 125px;
+}
+
+.header-content > .message > p {
+  width: 366px;
+  margin: 15px auto 0 auto;
+  font-size: 20pt;
+  letter-spacing: 0.5px;
+  line-height: 30pt;
+  color: $azure;
+}
+
+header > .navigation {
+  > * {
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+  }
+
+  > :first-child {
+    border-right: 1px solid $azure;
+  }
+
+  > :last-child {
+    border-left: 1px solid $azure;
+  }
+
+  > .selected {
+    background: $magenta;
+  }
+}
+
+header > .navigation > li > a {
+  display: block;
+  padding: 12px 0;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  color: $azure;
+  text-align: center;
+}
