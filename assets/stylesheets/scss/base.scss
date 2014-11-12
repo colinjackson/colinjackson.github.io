@@ -38,6 +38,15 @@ body {
 }
 
 
+/* BREAKPOINT: 960px */
+
+@media (min-width: 960px) {
+  body {
+    font-size: 18px;
+  }
+}
+
+
 
 /* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -108,7 +117,7 @@ header > .navigation {
 header > .navigation > li > a {
   display: block;
   padding: 12px 0;
-  font-size: 18px;
+  font-size: 12pt;
   font-weight: bold;
   letter-spacing: 3px;
   color: $azure;
@@ -132,6 +141,38 @@ header > .navigation > li > a {
     font-size: 24pt;
     line-height: 32pt;
     letter-spacing: 1.5px;
+  }
+
+  header > .navigation > li > a {
+    font-size: 16pt;
+  }
+}
+
+
+/* BREAKPOINT: 960px */
+
+@media (min-width: 960px) {
+  .header-content {
+    height: 238px;
+  }
+
+  .header-content > .context {
+    > small {
+      padding: 16px 32px;
+      font-size: 28px;
+    }
+  }
+
+  .header-content > p {
+    width: 700px;
+    font-size: 34pt;
+    line-height: 42pt;
+    margin-top: 20px;
+  }
+
+  header > .navigation > li > a {
+    font-size: 18pt;
+    letter-spacing: 5px;
   }
 }
 
@@ -192,6 +233,32 @@ main > h1 {
 }
 
 
+/* BREAKPOINT: 960px */
+
+@media (min-width: 960px) {
+  main {
+    padding: 0.1px
+  }
+
+  main > .social-media {
+    position: absolute;
+    right: 40px;
+    margin: 0 20px;
+    width: 240px;
+    border-radius: 3px;
+    background: $azure;
+  }
+
+  main > .social-media > li {
+    padding: 4%;
+  }
+
+  main > h1 {
+    margin: 40px 0 80px 0;
+  }
+}
+
+
 
 /* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -224,8 +291,26 @@ main > .biography > .my-photo {
   main > .biography {
     margin: 0 60px;
   }
+
+  main > .biography > .my-photo {
+    width: 220px;
+  }
 }
 
+
+/* BREAKPOINT: 960px */
+
+@media (min-width: 960px) {
+  main > .biography {
+    margin: 0 100px;
+    font-size: 18pt;
+    line-height: 32pt;
+  }
+
+  main > .biography > .my-photo {
+    width: 280px;
+  }
+}
 
 
 /* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -292,5 +377,23 @@ main > .projects-list > li > .project-content > p {
 @media (min-width: 600px) {
   main > .projects-list {
     margin: 0 60px;
+  }
+}
+
+
+/* BREAKPOINT: 960px */
+
+@media (min-width: 960px) {
+  main > .projects-list {
+    box-sizing: border-box;
+  }
+
+  main > .projects-list > li {
+    float: left;
+    width: 47.5%;
+  }
+
+  main > .projects-list > li:nth-child(2n + 1) {
+    margin-right: 5%;
   }
 }
