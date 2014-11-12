@@ -45,13 +45,13 @@ body {
   content: "";
   clear: both; }
 
-/* BREAKPOINT: 600px */
-@media (min-width: 600px) {
+/* BREAKPOINT: 600px non-retina */
+@media (min-width: 600px), (min-width: 1200px) and (min-resolution: 2dppx) {
   body {
     font-size: 16pt;
     line-height: 24pt; } }
-/* BREAKPOINT: 960px */
-@media (min-width: 960px) {
+/* BREAKPOINT: 960px non-retina */
+@media (min-width: 960px), (min-width: 1920px) and (min-resolution: 2dppx) {
   body {
     font-size: 18px; } }
 /* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -65,7 +65,7 @@ header {
   background: #241960; }
 
 .header-content {
-  height: 158px; }
+  height: 338px; }
 
 .header-content > .context > small {
   display: inline-block;
@@ -81,20 +81,20 @@ header {
 
 .header-content > p {
   width: 366px;
-  margin: 15px auto 0 auto;
+  margin: 75px auto 0 auto;
   font-size: 20pt;
   letter-spacing: 0.5px;
-  line-height: 30pt;
+  line-height: 42pt;
   text-align: center;
   color: #e2eef7; }
 
 header {
-  padding-bottom: 60px; }
+  padding-bottom: 100px; }
 
 header > .navigation {
   border: solid #e2eef7;
   border-width: 2px 0;
-  margin-bottom: -60px; }
+  margin-bottom: -100px; }
   header > .navigation > li {
     float: left;
     width: 50%;
@@ -116,7 +116,7 @@ header > .navigation.fixed {
 
 header > .navigation > li > a {
   display: block;
-  padding: 12px 0;
+  padding: 32px 0;
   font-size: 12pt;
   line-height: 24pt;
   font-weight: bold;
@@ -124,35 +124,30 @@ header > .navigation > li > a {
   color: #e2eef7;
   text-align: center; }
 
-/* BREAKPOINT: 600px */
-@media (min-width: 600px) {
+/* BREAKPOINT: 600px non-retina */
+@media (min-width: 600px), (min-width: 1200px) and (min-resolution: 2dppx) {
   .header-content > .context > small {
     padding: 8px 16px;
     font-size: 18pt; }
 
   .header-content > p {
     width: 466px;
-    margin-top: 0;
     font-size: 24pt;
-    line-height: 32pt;
     letter-spacing: 1.5px; }
 
   header > .navigation > li > a {
     font-size: 16pt; } }
-/* BREAKPOINT: 960px */
-@media (min-width: 960px) {
-  .header-content {
-    height: 238px; }
-
+/* BREAKPOINT: 960px non-retina */
+@media (min-width: 960px), (min-width: 1920px) and (min-resolution: 2dppx) {
   .header-content > .context > small {
     padding: 16px 32px;
     font-size: 28px; }
 
   .header-content > p {
-    width: 700px;
-    font-size: 34pt;
+    width: 580px;
+    font-size: 28pt;
     line-height: 42pt;
-    margin-top: 20px; }
+    margin-top: 55px; }
 
   header > .navigation > li > a {
     font-size: 18pt;
@@ -195,12 +190,12 @@ main > h1 {
   background: #241960;
   color: #bb2255; }
 
-/* BREAKPOINT: 600px */
-@media (min-width: 600px) {
+/* BREAKPOINT: 600px non-retina */
+@media (min-width: 600px), (min-width: 1200px) and (min-resolution: 2dppx) {
   main > .social-media > li {
     padding: 0 12%; } }
-/* BREAKPOINT: 960px */
-@media (min-width: 960px) {
+/* BREAKPOINT: 960px non-retina */
+@media (min-width: 960px), (min-width: 1920px) and (min-resolution: 2dppx) {
   main {
     padding: 0.1px; }
 
@@ -237,15 +232,15 @@ main > .biography > .my-photo {
   border-radius: 50%;
   margin: 18px; }
 
-/* BREAKPOINT: 600px */
-@media (min-width: 600px) {
+/* BREAKPOINT: 600px non-retina */
+@media (min-width: 600px), (min-width: 1200px) and (min-resolution: 2dppx) {
   main > .biography {
     margin: 0 60px; }
 
   main > .biography > .my-photo {
     width: 220px; } }
-/* BREAKPOINT: 960px */
-@media (min-width: 960px) {
+/* BREAKPOINT: 960px non-retina */
+@media (min-width: 960px), (min-width: 1920px) and (min-resolution: 2dppx) {
   main > .biography {
     margin: 0 100px;
     font-size: 18pt;
@@ -302,12 +297,12 @@ main > .projects-list > li > .project-content > img {
 main > .projects-list > li > .project-content > p {
   text-align: center; }
 
-/* BREAKPOINT: 600px */
-@media (min-width: 600px) {
+/* BREAKPOINT: 600px non-retina */
+@media (min-width: 600px), (min-width: 1200px) and (min-resolution: 2dppx) {
   main > .projects-list {
     margin: 0 60px; } }
-/* BREAKPOINT: 960px */
-@media (min-width: 960px) {
+/* BREAKPOINT: 960px non-retina */
+@media (min-width: 960px), (min-width: 1920px) and (min-resolution: 2dppx) {
   main > .projects-list {
     box-sizing: border-box; }
 
