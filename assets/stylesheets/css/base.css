@@ -45,6 +45,11 @@ body {
   content: "";
   clear: both; }
 
+/* BREAKPOINT: 600px */
+@media (min-width: 600px) {
+  body {
+    font-size: 16pt;
+    line-height: 24pt; } }
 /* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -71,15 +76,13 @@ header {
 .header-content > .context > :last-child {
   float: right; }
 
-.header-content > .message {
-  height: 125px; }
-
-.header-content > .message > p {
+.header-content > p {
   width: 366px;
   margin: 15px auto 0 auto;
   font-size: 20pt;
   letter-spacing: 0.5px;
   line-height: 30pt;
+  text-align: center;
   color: #e2eef7; }
 
 header > .navigation > li {
@@ -102,6 +105,18 @@ header > .navigation > li > a {
   color: #e2eef7;
   text-align: center; }
 
+/* BREAKPOINT: 600px */
+@media (min-width: 600px) {
+  .header-content > .context > small {
+    padding: 8px 16px;
+    font-size: 18pt; }
+
+  .header-content > p {
+    width: 466px;
+    margin-top: 0;
+    font-size: 24pt;
+    line-height: 32pt;
+    letter-spacing: 1.5px; } }
 /* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -140,7 +155,17 @@ main > h1 {
   background: #241960;
   color: #e2eef7; }
 
-/* ABOUT */
+/* BREAKPOINT: 600px */
+@media (min-width: 600px) {
+  main > .social-media > li {
+    padding: 0 12%; } }
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+ABOUT
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
 main > .biography {
   margin: 0 20px; }
 
@@ -154,7 +179,17 @@ main > .biography > .my-photo {
   border-radius: 50%;
   margin: 18px; }
 
-/* PORTFOLIO */
+/* BREAKPOINT: 600px */
+@media (min-width: 600px) {
+  main > .biography {
+    margin: 0 60px; } }
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+PORTFOLIO
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
 main > .projects-list {
   margin: 0 20px; }
 
@@ -196,5 +231,10 @@ main > .projects-list > li > .project-content > img {
 
 main > .projects-list > li > .project-content > p {
   text-align: center; }
+
+/* BREAKPOINT: 600px */
+@media (min-width: 600px) {
+  main > .projects-list {
+    margin: 0 60px; } }
 
 /*# sourceMappingURL=base.css.map */
