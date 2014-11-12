@@ -65,8 +65,7 @@ header {
   background: #241960; }
 
 .header-content {
-  height: 158px;
-  border-bottom: 2px solid #e2eef7; }
+  height: 158px; }
 
 .header-content > .context > small {
   display: inline-block;
@@ -89,21 +88,37 @@ header {
   text-align: center;
   color: #e2eef7; }
 
-header > .navigation > li {
-  float: left;
-  width: 50%;
-  box-sizing: border-box; }
-header > .navigation > :first-child {
-  border-right: 1px solid #e2eef7; }
-header > .navigation > :last-child {
-  border-left: 1px solid #e2eef7; }
-header > .navigation > .selected {
-  background: #bb2255; }
+header {
+  padding-bottom: 60px; }
+
+header > .navigation {
+  border: solid #e2eef7;
+  border-width: 2px 0;
+  margin-bottom: -60px; }
+  header > .navigation > li {
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+    background: #241960; }
+  header > .navigation > :first-child {
+    border-right: 1px solid #e2eef7; }
+  header > .navigation > :last-child {
+    border-left: 1px solid #e2eef7; }
+  header > .navigation > .selected {
+    background: #bb2255; }
+
+header > .navigation.fixed {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%; }
 
 header > .navigation > li > a {
   display: block;
   padding: 12px 0;
   font-size: 12pt;
+  line-height: 24pt;
   font-weight: bold;
   letter-spacing: 3px;
   color: #e2eef7;

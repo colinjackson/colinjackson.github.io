@@ -62,7 +62,6 @@ header {
 
 .header-content {
   height: 158px;
-  border-bottom: 2px solid $azure;
 }
 
 .header-content > .context {
@@ -94,11 +93,20 @@ header {
   color: $azure;
 }
 
+header {
+  padding-bottom: 60px;
+}
+
 header > .navigation {
+  border: solid $azure;
+  border-width: 2px 0;
+  margin-bottom: -60px;
+
   > li {
     float: left;
     width: 50%;
     box-sizing: border-box;
+    background: $purple;
   }
 
   > :first-child {
@@ -114,10 +122,19 @@ header > .navigation {
   }
 }
 
+header > .navigation.fixed {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
 header > .navigation > li > a {
   display: block;
   padding: 12px 0;
   font-size: 12pt;
+  line-height: 24pt;
   font-weight: bold;
   letter-spacing: 3px;
   color: $azure;

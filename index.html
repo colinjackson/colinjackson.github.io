@@ -4,6 +4,7 @@
   <head>
     <title>About | Colin Jackson</title>
     <link rel="stylesheet" href="assets/stylesheets/css/base.css">
+    <script src="assets/javascripts/jquery-2.1.1.min.js"></script>
   </head>
   <body>
     <header>
@@ -68,4 +69,12 @@
       </div>
     </main>
   </body>
+
+  <script charset="utf-8">
+  $(window).scroll(function (event) {
+    var headerHeight = $('.header-content').height();
+    $('header > .navigation')
+    .toggleClass('fixed', ($(window).scrollTop() > headerHeight));
+  });
+  </script>
 </html>
