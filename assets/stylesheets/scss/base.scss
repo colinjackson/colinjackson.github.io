@@ -28,9 +28,11 @@ body {
 }
 
 
-/* BREAKPOINT: 600px */
+/* BREAKPOINT: 600px non-retina */
 
-@media (min-width: 600px) {
+@media
+(min-width: 600px) and (max-resolution: 1.5dppx),
+(min-width: 1200px) {
   body {
     font-size: 16pt;
     line-height: 24pt;
@@ -38,9 +40,11 @@ body {
 }
 
 
-/* BREAKPOINT: 960px */
+/* BREAKPOINT: 960px non-retina */
 
-@media (min-width: 960px) {
+@media
+(min-width: 960px) and (max-resolution: 1.5dppx),
+(min-width: 1920px) {
   body {
     font-size: 18px;
   }
@@ -61,7 +65,7 @@ header {
 }
 
 .header-content {
-  height: 158px;
+  height: 338px;
 }
 
 .header-content > .context {
@@ -85,22 +89,22 @@ header {
 
 .header-content > p {
   width: 366px;
-  margin: 15px auto 0 auto;
+  margin: 75px auto 0 auto;
   font-size: 20pt;
   letter-spacing: 0.5px;
-  line-height: 30pt;
+  line-height: 42pt;
   text-align: center;
   color: $azure;
 }
 
 header {
-  padding-bottom: 60px;
+  padding-bottom: 100px;
 }
 
 header > .navigation {
   border: solid $azure;
   border-width: 2px 0;
-  margin-bottom: -60px;
+  margin-bottom: -100px;
 
   > li {
     float: left;
@@ -132,7 +136,7 @@ header > .navigation.fixed {
 
 header > .navigation > li > a {
   display: block;
-  padding: 12px 0;
+  padding: 32px 0;
   font-size: 12pt;
   line-height: 24pt;
   font-weight: bold;
@@ -142,9 +146,11 @@ header > .navigation > li > a {
 }
 
 
-/* BREAKPOINT: 600px */
+/* BREAKPOINT: 600px non-retina */
 
-@media (min-width: 600px) {
+@media
+(min-width: 600px) and (max-resolution: 1.5dppx),
+(min-width: 1200px) {
   .header-content > .context {
     > small {
       padding: 8px 16px;
@@ -154,9 +160,7 @@ header > .navigation > li > a {
 
   .header-content > p {
     width: 466px;
-    margin-top: 0;
     font-size: 24pt;
-    line-height: 32pt;
     letter-spacing: 1.5px;
   }
 
@@ -166,13 +170,11 @@ header > .navigation > li > a {
 }
 
 
-/* BREAKPOINT: 960px */
+/* BREAKPOINT: 960px non-retina */
 
-@media (min-width: 960px) {
-  .header-content {
-    height: 238px;
-  }
-
+@media
+(min-width: 960px) and (max-resolution: 1.5dppx),
+(min-width: 1920px) {
   .header-content > .context {
     > small {
       padding: 16px 32px;
@@ -181,10 +183,10 @@ header > .navigation > li > a {
   }
 
   .header-content > p {
-    width: 700px;
-    font-size: 34pt;
+    width: 580px;
+    font-size: 28pt;
     line-height: 42pt;
-    margin-top: 20px;
+    margin-top: 55px;
   }
 
   header > .navigation > li > a {
@@ -241,18 +243,22 @@ main > h1 {
 }
 
 
-/* BREAKPOINT: 600px */
+/* BREAKPOINT: 600px non-retina */
 
-@media (min-width: 600px) {
+@media
+(min-width: 600px) and (max-resolution: 1.5dppx),
+(min-width: 1200px) {
   main > .social-media > li {
     padding: 0 12%;
   }
 }
 
 
-/* BREAKPOINT: 960px */
+/* BREAKPOINT: 960px non-retina */
 
-@media (min-width: 960px) {
+@media
+(min-width: 960px) and (max-resolution: 1.5dppx),
+(min-width: 1920px) {
   main {
     padding: 0.1px
   }
@@ -302,9 +308,11 @@ main > .biography > .my-photo {
 }
 
 
-/* BREAKPOINT: 600px */
+/* BREAKPOINT: 600px non-retina */
 
-@media (min-width: 600px) {
+@media
+(min-width: 600px) and (max-resolution: 1.5dppx),
+(min-width: 1200px) {
   main > .biography {
     margin: 0 60px;
   }
@@ -315,9 +323,11 @@ main > .biography > .my-photo {
 }
 
 
-/* BREAKPOINT: 960px */
+/* BREAKPOINT: 960px non-retina */
 
-@media (min-width: 960px) {
+@media
+(min-width: 960px) and (max-resolution: 1.5dppx),
+(min-width: 1920px) {
   main > .biography {
     margin: 0 100px;
     font-size: 18pt;
@@ -389,18 +399,22 @@ main > .projects-list > li > .project-content > p {
 }
 
 
-/* BREAKPOINT: 600px */
+/* BREAKPOINT: 600px non-retina */
 
-@media (min-width: 600px) {
+@media
+(min-width: 600px) and (max-resolution: 1.5dppx),
+(min-width: 1200px) {
   main > .projects-list {
     margin: 0 60px;
   }
 }
 
 
-/* BREAKPOINT: 960px */
+/* BREAKPOINT: 960px non-retina */
 
-@media (min-width: 960px) {
+@media
+(min-width: 960px) and (max-resolution: 1.5dppx),
+(min-width: 1920px) {
   main > .projects-list {
     box-sizing: border-box;
   }
