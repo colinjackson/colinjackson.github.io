@@ -237,7 +237,7 @@ main > h1 {
   font-size: 28pt;
   text-align: center;
   background: $purple;
-  color: $azure;
+  color: $magenta;
 }
 
 
@@ -362,7 +362,7 @@ main > .projects-list > li > h2 > a {
   position: relative;
   top: -6px;
   margin: 0 6px;
-  padding: 4px 8px 2px 8px;
+  padding: 4px 12px 2px 12px;
   font-size: 14pt;
   color: $azure;
   background: $purple;
@@ -413,4 +413,35 @@ main > .projects-list > li > .project-content > p {
   main > .projects-list > li:nth-child(2n + 1) {
     margin-right: 5%;
   }
+}
+
+
+
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+FOOTER
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+
+footer {
+  width: 100%;
+  padding: 60px 0;
+  background: $purple;
+}
+
+footer > small {
+  display: block;
+  font-family: 'Josefin Slab', serif;
+  text-align:center;
+  color: $magenta;
+  font-size: 10pt;
+  letter-spacing: 4px;
+}
+
+footer > small.copyright {
+  margin-top: 10px;
+  font-size: 8pt;
+  letter-spacing: 0;
 }
