@@ -91,4 +91,12 @@
       </ul>
     </main>
   </body>
+
+  <script charset="utf-8">
+  $(window).scroll(function (event) {
+    var headerHeight = $('.header-content').height();
+    $('header > .navigation')
+    .toggleClass('fixed', ($(window).scrollTop() > headerHeight));
+  });
+  </script>
 </html>
