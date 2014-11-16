@@ -204,7 +204,7 @@ main > h1 {
 
   main > .social-media {
     position: absolute;
-    top: 0.5rem;
+    top: 2.5rem;
     right: 20px;
     width: 25%;
     height: 3rem;
@@ -217,7 +217,7 @@ main > h1 {
     padding: 0.5rem; }
 
   main > h1 {
-    margin-top: 2rem; } }
+    margin-top: 4rem; } }
 /* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -234,6 +234,7 @@ main > .biography > p {
 main > .biography > .my-photo {
   float: right;
   width: 33vw;
+  max-width: 300px;
   border: 2px solid #bb2255;
   border-radius: 50%;
   margin: 0.75rem; }
