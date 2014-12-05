@@ -398,15 +398,16 @@ footer {
 footer > small {
   display: block;
   font-family: 'Josefin Slab', serif;
-  text-align:center;
+  text-align: center;
   color: $magenta;
-  font-size: 0.75rem;
+  font-size: 0.66rem;
+  margin-top: 1rem;
   line-height: 1rem;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0;
 }
 
-footer > small.copyright {
-  margin-top: 1rem;
-  font-size: 0.66rem;
-  letter-spacing: 0;
+footer > small.production-message {
+  font-size: 0.75rem;
+  margin-top: 0;
+  letter-spacing: 0.2rem;
 }
